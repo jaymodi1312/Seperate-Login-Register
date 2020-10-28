@@ -4,3 +4,13 @@ https://www.businessbloomer.com/woocommerce-separate-login-registration/
 Display Diffrent Menu : ==============================================
 
 https://wpcodeus.com/display-different-wordpress-menu-to-logged-in-users/
+
+
+
+Redircet Registration : ====================
+
+function custom_registration_redirect() {
+    return home_url('/');
+}
+add_action('woocommerce_registration_redirect', 'custom_registration_redirect', 2);
+
